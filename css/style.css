@@ -473,54 +473,46 @@ ul li .link:hover::after{
     padding: 5px;
     max-height: 100%;
     overflow-y: scroll;
-
-
-    .accordion-item{
-        margin: 20px 0;
-        border-radius: 3px;
-        background-color: #fff;
-
-        .accordion-header{
-            font-size: 1rem;
-            font-weight: 600;
-            position: relative;
-            display: flex;
-            gap: 11px;
-            align-items: center;
-            cursor: pointer;
-            padding: 10px;
-            color: #fff;
-            border-radius: 4px;
-            background: var(--text-sec-color);
-        }
-        
-        .accordion-header::after{
-            content: "\f107";
-            font-size: 1rem;
-            font-weight: 600;
-            position: absolute;
-            left: 20px;
-            transition: .2s;
-            font-family: "Font Awesome 5 Free";
-        }
-        
-        .accordion-header.active::after{
-            transform: rotate(-180deg);
-        }
-        
-        .answercont{
-            max-height: 0;
-            overflow: hidden;
-            transition: .3s;
-            background-color: var(--smail-text-color);
-        }
-        
-        .answer{
-            line-height: 1.6;
-            padding: 10px 20px 20px;
-        }
-    }
-
+}
+.pop-chat .container .content .quesitionsPopular .container-question .accordion-item{
+    margin: 20px 0;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.pop-chat .container .content .quesitionsPopular .container-question .accordion-item .accordion-header{
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+    border-radius: 4px;
+    background: var(--text-sec-color);
+}
+.pop-chat .container .content .quesitionsPopular .container-question .accordion-item .accordion-header::after{
+    content: "\f107";
+    font-size: 1rem;
+    font-weight: 600;
+    position: absolute;
+    left: 20px;
+    transition: .2s;
+    font-family: "Font Awesome 5 Free";
+}
+.pop-chat .container .content .quesitionsPopular .container-question .accordion-item .accordion-header.active::after{
+    transform: rotate(-180deg);
+}
+.pop-chat .container .content .quesitionsPopular .container-question .accordion-item .answercont{
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s;
+    background-color: var(--smail-text-color);
+}
+.pop-chat .container .content .quesitionsPopular .container-question .accordion-item .answer{
+    line-height: 1.6;
+    padding: 10px 20px 20px;
 }
 
 .pop-chat .container .button-icon{
